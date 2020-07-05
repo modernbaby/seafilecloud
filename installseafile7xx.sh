@@ -1,18 +1,18 @@
 
 ################ 一键安装Seafile7.1.x脚本 ##################
 #Author:modernbaby
-#Update:2020-04-18
+#Update:2020-07-05
 #######################   END   #######################
 
 #安装seafile7.1.x版本函数
 function install_sea() {
 
-	#开始获取seafile版本7.1.3
+	#开始获取seafile版本7.1.4
 	mkdir /home/mycloud
 	cd /home/mycloud
 	mkdir installed
-	wget http://seafile-downloads.oss-cn-shanghai.aliyuncs.com/seafile-server_7.1.3_x86-64.tar.gz
-	tar -zxvf seafile-server_7.1.3_x86-64.tar.gz
+	wget http://seafile-downloads.oss-cn-shanghai.aliyuncs.com/seafile-server_7.1.4_x86-64.tar.gz
+	tar -zxvf seafile-server_7.1.4_x86-64.tar.gz
 	mv seafile-server*.tar.gz ./installed
 	mv seafile-server-7* seafile-server
 
@@ -41,10 +41,10 @@ function install_sea() {
 
 }
 
-echo "##########  Seafile7.1.3一键安装脚本	##########"
+echo "##########  Seafile7.1.4一键安装脚本	##########"
 
-echo "1.安装Seafile7.1.3"
-echo "2.卸载Seafile7.1.3"
+echo "1.安装Seafile7.1.4"
+echo "2.卸载Seafile7.1.4"
 echo "3.退出"
 declare -i stype
 read -p "请输入选项:（1.2.3）:" stype
